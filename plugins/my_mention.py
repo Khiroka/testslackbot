@@ -25,7 +25,7 @@ from slackbot.bot import default_reply  # 該当する応答がない場合に�
 # respond_toで指定してもいいし、中でif message=xxx と分岐してもいい
 @respond_to('(.*)')
 def mention_func(message, args):
-    message.reply(ret) # メンション
+    message.reply("RTM message") # メンション
 
 
 
