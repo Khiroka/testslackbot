@@ -12,7 +12,7 @@ sched = BlockingScheduler()
 def send_message(channel, message):
     client.chat_postMessage(channel=channel, text=message)
 
-@sched.scheduled_job('interval', seconds=30)
+@sched.scheduled_job('interval', hours=1)
 def timed_job():
     send_message('G0149FE9SAW', "APSheduler message")
 
